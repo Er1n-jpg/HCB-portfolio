@@ -10,7 +10,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     
-    <div className = "g-[#1B1E25] flex flex-col items-center justify-center z-0">
+    <div className = "h-screen bg-[#1B1E25] flex flex-col items-center justify-center">
     <div className = " items-center ">
     <div className = "items-center font-roboto">
     <h3 className = "text-5xl text-white font-bold -mb-25 ml-5"> My</h3>

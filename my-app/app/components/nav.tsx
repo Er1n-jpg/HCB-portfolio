@@ -1,25 +1,17 @@
 import { Link, NavLink } from "react-router";
 
+
+
 export default function Nav() {
   return (
-    <div style={{ background: "red", height: "60px", width: "100%", zIndex: 1 }}>
-      NAVBAR TEST
-    </div>
-  );
-}
-
-/*export default function Nav() {
-  return (
-    <nav className="fixed top-0 w-full bg-red-500 z-50 px-8 py-4">
-      <div className="flex items-center justify-between max-w-6xl mx-auto">
-        <Link to="/" className="text-[#FFFFF] font-extrabold text-2xl">
-          HCB
-        </Link>
+    <nav className="fixed top-0 w-full bg-[#1B1E25] z-50 px-8 py-4">
+      <div className="flex items-center justify-end max-w-6xl mx-auto text-2xl">
         <div className="flex gap-8">
+          
           <NavLink
             to="/"
             className={({ isActive }) =>
-              `text-white font-bold hover:text-[#FF6363] transition-colors ${
+              `text-white font-bold hover:text-[#FF6363] transition-colors font-roboto ${
                 isActive ? "text-[#FF6363]" : ""
               }`
             }
@@ -27,26 +19,28 @@ export default function Nav() {
             Home
           </NavLink>
           <NavLink
-            to="/main"
+            to="/design"
             className={({ isActive }) =>
-              `text-white font-bold hover:text-[#FF6363] transition-colors ${
+              `text-white font-bold hover:text-[#FF6363] transition-colors font-roboto ${
                 isActive ? "text-[#FF6363]" : ""
               }`
             }
           >
-            About
+            Design
           </NavLink>
-          <NavLink
-            to="/projects"
-            className={({ isActive }) =>
-              `text-white font-bold hover:text-[#FF6363] transition-colors ${
+
+          <NavLink 
+            to="/art"
+            className ={({ isActive }) =>
+              `text-white font-roboto font-bold hover:text-[#FF6363] transition-colors ${
                 isActive ? "text-[#FF6363]" : ""
               }`
-            }
+          }
           >
+            Art
           </NavLink>
         </div>
       </div>
     </nav>
   );
-} */
+} 
