@@ -78,7 +78,7 @@ function DesignItem({
 
 export default function design(){
     return(
-        <div className = "h-screen flex flex-col bg-[#1B1E25] pt-16">
+        <div className = "h-full flex flex-col bg-[#1B1E25] pt-16">
             <div className = "flex flex-row gap-3">
                 <h3 className ="text-white font-roboto mt-5 mb-5 ml-15 font-roboto text-4xl"> Designs </h3>
             <img src="/eight.png" alt="eight" className="h-12 w-12 mt-3 " />
