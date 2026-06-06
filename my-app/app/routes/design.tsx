@@ -65,8 +65,11 @@ function DesignItem({
 }){
     return (
         <a href = {link}>
-        <div className = "max-w-3xl flex flex-col bg-[#3D3D3D] rounded-lg" >
-            <h3 className = "font-roboto font-bold text-2xl mt-5 mb-2 ml-4 text-white ">{title}</h3>
+        <div className = "max-w-3xl flex flex-col bg-[#3D3D3D] rounded-lg border-3 border-[#7E7E7E]" >
+            <div className = "flex flex-row items-center justify-between">
+            <h3 className = "font-roboto text-3xl mt-5 mb-2 ml-4 text-white font-bold">{title}</h3>
+            <img src ="/arrow.png" alt = "" className = "h-12 w-12 mr-4 mt-2"></img>
+            </div>
             <img src = {img} alt = "" className = " max-w-[70%] ml-4 mb-4 "></img>
         </div>
     </a>
@@ -76,10 +79,11 @@ function DesignItem({
 export default function design(){
     return(
         <div className = "h-screen flex flex-col bg-[#1B1E25] pt-16">
-            <div className = "flex flex-row gap-10">
-                <h3 className ="text-white font-roboto mt-5 mb-5 ml-10 font-roboto text-4xl"> Designs </h3>
+            <div className = "flex flex-row gap-3">
+                <h3 className ="text-white font-roboto mt-5 mb-5 ml-15 font-roboto text-4xl"> Designs </h3>
+            <img src="/eight.png" alt="eight" className="h-12 w-12 mt-3 " />
             </div>
-            <div className = "grid grid-cols-3 gap-4 ml-10 mr-10 min-h-30">
+            <div className = "grid grid-cols-3 gap-4 ml-15 mr-15 min-h-30">
                 { designItems.map((item) =>(
                     <DesignItem
                     key = {item.id}

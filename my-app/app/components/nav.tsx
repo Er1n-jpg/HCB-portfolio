@@ -6,7 +6,7 @@ export default function Nav() {
   return (
     <nav className="fixed top-0 w-full bg-[#1B1E25] z-50 px-8 py-4">
       <div className="flex items-center justify-end max-w-6xl mx-auto text-2xl">
-        <div className="flex gap-8">
+        <div className="flex gap-24">
           
           <NavLink
             to="/"
