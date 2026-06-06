@@ -81,9 +81,9 @@ export default function design(){
         <div className = "h-full flex flex-col bg-[#1B1E25] pt-16">
             <div className = "flex flex-row gap-3">
                 <h3 className ="text-white font-roboto mt-5 mb-5 ml-15 font-roboto text-4xl"> Designs </h3>
-            <img src="/eight.png" alt="eight" className="h-12 w-12 mt-3 " />
+            <img src="/eight.png" alt="eight" className="h-12 w-12 mt-3" />
             </div>
-            <div className = "grid grid-cols-3 gap-4 ml-15 mr-15 min-h-30">
+            <div className = "grid grid-cols-3 gap-4 ml-15 mr-15 min-h-30 mb-10">
                 { designItems.map((item) =>(
                     <DesignItem
                     key = {item.id}

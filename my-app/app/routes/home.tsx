@@ -2,8 +2,8 @@ import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "HCBfolio" },
+    { name: "description", content: "Erin's HCBfolio" },
   ];
 }
 
@@ -32,8 +32,10 @@ export default function Home() {
               <h1 className = "break-words mt-6"> I'm passionate about webdev, design, art and marketing. I hope you guys enjoy this portfolio website!(it's HCB themed + I eyeballed alot of the stuff on here!)</h1>
               <h1 className = "text-2xl mt-12"> Note: I'm not working on paradox anymore Dhamari quit lol so i'll have alot more time</h1>
             </div>
+
           </div>
         </div>
+        <h1 className = "mb-5 text-white font-bold"> Made with love by Erin (no vibes in this code!) </h1>
     </div>
   );
 }

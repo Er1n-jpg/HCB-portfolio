@@ -12,6 +12,7 @@ import "./app.css";
 import Nav from "./components/nav";
 
 export const links: Route.LinksFunction = () => [
+  { rel: "icon", type: "image/ico", href: "/favicon.ico" },
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",
